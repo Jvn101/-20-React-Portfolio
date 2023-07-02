@@ -1,10 +1,14 @@
+:root {
+  --light: #fff;
+  --dark: #6082a2;
+  
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: sans-serif;
+    text-align: center;
+    background-color: #f4b9d7;
 }
 
 code {
@@ -13,11 +17,102 @@ code {
 }
 
 
-.navbar, .navbar-brand {
+/* .navbar {
   text-align: center;
-  display: block;
+  justify-content: space-between;
+  display: flex;
   width: 100%;
-  background-color: aliceblue;
+  background-color: #6082a2;
+  cursor: pointer;
+  
+} */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dark);
+  min-height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  bottom: 0;
 }
+
+footer a {
+  display: flex;
+  font-size: 20px;
+  margin-left: 50px;
+  color: white;
+}
+
+.headerbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6082a2;
+  padding: 1%;
+  
+}
+
+.headerbar h1 {
+  color: white;
+}
+
+.navbar {
+  display: inline-block;
+}
+/* .navbar li {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  list-style: none;
+  font-size: 20px;
+  background-color: unset;
+  font-weight: bold;
+  text-decoration: none;
+} */
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--light);
+
+}
+
+.Profile {
+	clip-path: circle();
+  width: 250px;
+}
+
+/* dynamic view for screens 992px-769px */
+@media screen and (max-width: 992px) {
+  header, main, body, article, section {
+    flex-direction: column;
+  }
+
+  /* Change the header color */
+  header {
+    background: #772014;
+  }
+}
+
+/* dynamic view for screens 768px or smaller */
+@media screen and (max-width: 768px) {
+  header, main ,body, article, section {
+    flex-direction: column;
+  }
+ 
+  /* Change the header color */
+  header {
+    background: #3593f1;
+  }
+}
+
+
 /*  */
 
