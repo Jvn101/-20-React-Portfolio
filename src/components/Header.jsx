@@ -7,18 +7,19 @@ import Contact from "./Contact";
 function Header( {setCurrentPage}) {
 
 
-
-
-
 return (
-    <div>
-        <nav>
-            <h4 onClick={()=> setCurrentPage("About")}>About</h4>
-            <h4 onClick={()=> setCurrentPage("Work")}>Work</h4>
-            <h4 onClick={()=> setCurrentPage("Contact")}>Contact</h4>
+    <div className="headerbar">
+        <h1>Jasmine</h1>
+        <nav className="navbar">
+            <ul>
+            <li onClick={()=> setCurrentPage("About")}>About</li>
+            <li onClick={()=> setCurrentPage("Work")}>Work</li>
+            <li onClick={()=> setCurrentPage("Contact")}>Contact</li>
+            </ul>
         </nav>
     </div>
   );
+
 
 }
 export default Header;

@@ -14,12 +14,7 @@
 
 
 import React, {useState} from 'react';
-
-import About from './components/About';
-
-import Contact from './components/Contact';
-
-import {Footer, Header, Work} from './components'
+import {Footer, Header, Work, About, Contact} from './components'
 
 function App() {
   // const [var, function] = useState(default value of the variable)
@@ -34,5 +29,7 @@ function App() {
       {currentPage === "Work" && <Work/>}
       {currentPage === "Contact" && <Contact/>}
       <Footer />
+      </div>
+)}
 
 export default App;

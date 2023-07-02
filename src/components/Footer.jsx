@@ -5,10 +5,8 @@ function Footer() {
     <footer className="footer">
       <div className="content has-text-centered">
         <p>
-          <strong>My Full Stack Development Portfolio</strong> - a React site by{" "}
-          <a href="https://github.com/Jvn101" target="_blank" rel="noreferrer">
-        
-          </a>
+          <strong>My Full Stack Development Portfolio</strong> - a React site by Jasmine
+          <a href="https://github.com/Jvn101">GitHub</a>
           </p>
       </div>
     </footer>
