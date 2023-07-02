@@ -1,3 +1,4 @@
+
 // import './App.css';
 // import BucketList from './components/BucketList';
 
@@ -33,8 +34,5 @@ function App() {
       {currentPage === "Work" && <Work/>}
       {currentPage === "Contact" && <Contact/>}
       <Footer />
-    </div>
-  );
-}
 
 export default App;
