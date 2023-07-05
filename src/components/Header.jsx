@@ -13,8 +13,9 @@ return (
         <nav className="navbar">
             <ul>
             <li onClick={()=> setCurrentPage("About")}>About</li>
-            <li onClick={()=> setCurrentPage("Work")}>Work</li>
+            <li onClick={()=> setCurrentPage("Portfolio")}>Portfolio</li>
             <li onClick={()=> setCurrentPage("Contact")}>Contact</li>
+            <li onClick={()=> setCurrentPage("Resume")}>Resume</li>
             </ul>
         </nav>
     </div>

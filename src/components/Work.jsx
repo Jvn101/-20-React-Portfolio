@@ -1,4 +1,4 @@
-const Work = (props)=> {
+const Portfolio = (props)=> {
     //const project = props.projects;
     return (
 
