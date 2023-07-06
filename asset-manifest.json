@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8c41508a.css",
+    "main.js": "/static/js/main.e4bfa4cf.js",
+    "static/media/Jasmine-Neal-Resume.pdf": "/static/media/Jasmine-Neal-Resume.e2e5916346c36ef1472b.pdf",
+    "index.html": "/index.html",
+    "main.8c41508a.css.map": "/static/css/main.8c41508a.css.map",
+    "main.e4bfa4cf.js.map": "/static/js/main.e4bfa4cf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8c41508a.css",
+    "static/js/main.e4bfa4cf.js"
+  ]
+}
