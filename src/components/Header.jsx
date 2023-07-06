@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navigation from "./navigation";
 import About from "./About";
 import Contact from "./Contact";
+import Portfolio from './Portfolio';
 
 
 function Header( {setCurrentPage}) {
