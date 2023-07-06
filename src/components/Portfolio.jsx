@@ -1,9 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import Card from "./Card";
 
-const projects = [
+function Portfolio(){
+
+const [portfolio] = useState([
   {
-    title: "JavaScript Password Generator",
+    title: "Password Generator",
     image: "/Images/passwordGenerator.png",
     description: "Website showcasing a random password generator that outputs passwords based on a set of criteria with options selected by the user.",
     repository: "https://github.com/Jvn101/03-JavaScript-Password-Generator",
@@ -17,7 +19,7 @@ const projects = [
     deployedlink: "https://jvn101.github.io/04-Web-APIs-Code-Quiz/"
   },
   {
-    title: "Server Side APIs Weather Dashboard",
+    title: "API Weather Dashboard",
     image: "/Images/weatherAPI.png",
     description: "Weather dashboard that features todays weather followed by a five day forecast.",
     repository: "https://github.com/Jvn101/06-Server-Side-APIs-Weather-Dashboard",
@@ -38,21 +40,23 @@ const projects = [
     deployedlink: ""
   },
   {
-    title: "NoSQL Social Network API",
+    title: "NoSQL Social Network",
     image: "/Images/NoSQLSocialNetwork.png",
     description: "This application ia an API for a social network web page where users can share their thoughts, react to friends’ thoughts, and create a friend list.",
     repository: "https://github.com/Jvn101/18-NoSQL-Social-Network-API",
     deployedlink: ""
-  }
-]
+  },
+]);
 
-function Portfolio() {
   return (
     <div>
-      <p>Portfolio</p>
-      <Card title={projects.title} description={projects.description} />
+      <h1 class="pageHeading">Portfolio</h1>
+      {portfolio.map((singlePortfolio, idx) => (
+        <Card portfolio={singlePortfolio} key={"portfolio" + idx}/>
+        ))}
     </div>
   );
-}
+
+};
 
 export default Portfolio;

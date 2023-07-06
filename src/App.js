@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Footer, Header, Portfolio, About, Contact} from './components'
+import {Footer, Header, Portfolio, About, Contact, Resume} from './components'
 
 function App() {
   // const [var, function] = useState(default value of the variable)
